@@ -9,17 +9,6 @@ const startServer = async () => {
   try {
     await connectDB();
 
-    console.log("Environment check:", {
-      cloudName: Boolean(
-        process.env.CLOUDINARY_CLOUD_NAME
-      ),
-      apiKey: Boolean(
-        process.env.CLOUDINARY_API_KEY
-      ),
-      apiSecret: Boolean(
-        process.env.CLOUDINARY_API_SECRET
-      )
-    });
 
     app.listen(PORT, () => {
       console.log(
