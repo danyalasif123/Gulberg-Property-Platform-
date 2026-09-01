@@ -1,0 +1,970 @@
+/* =========================================
+   PUBLIC PROPERTIES PAGE
+========================================= */
+
+.properties-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f7f3e8;
+
+  color: #0b0b0b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+/* =========================================
+   PROPERTY INTRO / HERO
+   Compact About / Locations style
+========================================= */
+
+.properties-intro-section {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 390px;
+
+  height: 48vh;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  padding-top: 70px;
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0b0b0b 0%,
+      #17140d 55%,
+      #252014 100%
+    );
+
+  color: #ffffff;
+}
+
+/* =========================================
+   HERO GOLD GLOW
+========================================= */
+
+.properties-intro-section::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 75% 50%,
+      rgba(
+        201,
+        162,
+        39,
+        0.18
+      ),
+      transparent 38%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   HERO OVERLAY
+========================================= */
+
+.properties-intro-section::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(
+        11,
+        11,
+        11,
+        0.95
+      ) 0%,
+      rgba(
+        11,
+        11,
+        11,
+        0.72
+      ) 55%,
+      rgba(
+        11,
+        11,
+        11,
+        0.45
+      ) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   INTRO CONTAINER
+========================================= */
+
+.properties-intro-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   INTRO CONTENT
+========================================= */
+
+.properties-intro-content {
+  width: 100%;
+}
+
+
+/* =========================================
+   INTRO LABEL
+========================================= */
+
+.properties-intro-label {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+  color: #c9a227;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   LABEL LINE
+========================================= */
+
+.properties-intro-label::before {
+  content: "";
+
+  width: 32px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: #c9a227;
+}
+
+
+/* =========================================
+   INTRO HEADING
+========================================= */
+
+.properties-intro-content h1 {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    44px,
+    5.5vw,
+    68px
+  );
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+
+/* =========================================
+   INTRO GOLD TEXT
+========================================= */
+
+.properties-intro-content h1 span {
+  color: #c9a227;
+}
+
+
+/* =========================================
+   INTRO DESCRIPTION
+========================================= */
+
+.properties-intro-content p {
+  max-width: 540px;
+
+  margin: 22px 0 0;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.68
+  );
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   PROPERTIES SECTION
+========================================= */
+
+.properties-section {
+  width: 100%;
+
+  padding: 100px 0 110px;
+
+  background: #f7f3e8;
+
+  color: #0b0b0b;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   PROPERTIES CONTAINER
+========================================= */
+
+.properties-container {
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.properties-container
+.property-filters {
+  width: 100%;
+
+  margin-bottom: 55px;
+}
+
+
+/* =========================================
+   RESULTS HEADER
+========================================= */
+
+.properties-results-header {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 35px;
+
+  padding-bottom: 25px;
+
+  border-bottom: 1px solid #ded8c9;
+}
+
+
+/* =========================================
+   RESULTS TITLE
+========================================= */
+
+.properties-results-title {
+  min-width: 0;
+}
+
+
+.results-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #b18b16;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  line-height: 1;
+}
+
+
+/*
+   Your JSX uses <h2>, not <h1>
+*/
+
+.properties-results-title h2 {
+  margin: 0;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    32px,
+    4vw,
+    48px
+  );
+
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.7px;
+}
+
+
+/* =========================================
+   SORT
+========================================= */
+
+.properties-sort {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-shrink: 0;
+}
+
+
+.properties-sort label {
+  color: #68645b;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+.properties-sort select {
+  min-width: 175px;
+
+  padding: 11px 35px 11px 13px;
+
+  border: 1px solid #d6cfbf;
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: #fbfaf5;
+
+  color: #0b0b0b;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.properties-sort select:hover {
+  border-color: #c9a227;
+}
+
+
+.properties-sort select:focus {
+  border-color: #b18b16;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(
+      201,
+      162,
+      39,
+      0.08
+    );
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.properties-error {
+  width: 100%;
+
+  padding: 16px 20px;
+
+  margin-bottom: 30px;
+
+  border: 1px solid #d6b8a8;
+
+  background: #fbfaf5;
+
+  color: #8d4935;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   PROPERTY GRID
+========================================= */
+
+.properties-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.properties-loading {
+  min-height: 350px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  color: #68645b;
+}
+
+
+.properties-spinner {
+  width: 34px;
+
+  height: 34px;
+
+  border: 2px solid #ded8c9;
+
+  border-top-color: #b18b16;
+
+  border-radius: 50%;
+
+  animation:
+    properties-spin
+    0.8s
+    linear
+    infinite;
+}
+
+
+@keyframes properties-spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.properties-empty {
+  width: 100%;
+
+  padding: 80px 25px;
+
+  text-align: center;
+
+  border: 1px solid #ded8c9;
+
+  background: #fbfaf5;
+}
+
+
+.empty-icon {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 0 auto 25px;
+
+  border: 1px solid #c9a227;
+
+  color: #b18b16;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 22px;
+}
+
+
+.properties-empty h2 {
+  margin: 0 0 12px;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+.properties-empty p {
+  max-width: 430px;
+
+  margin: 0 auto 25px;
+
+  color: #777268;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+.properties-empty button {
+  padding: 12px 20px;
+
+  border: 1px solid #c9a227;
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #0b0b0b;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.properties-empty button:hover {
+  background: #0b0b0b;
+
+  border-color: #0b0b0b;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.properties-pagination {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 55px;
+}
+
+
+/* =========================================
+   PAGINATION BUTTONS
+========================================= */
+
+.properties-pagination button {
+  min-width: 38px;
+
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 0 10px;
+
+  border: 1px solid #ded8c9;
+
+  border-radius: 0;
+
+  background: #fbfaf5;
+
+  color: #0b0b0b;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.properties-pagination button:hover {
+  border-color: #c9a227;
+
+  background: #ffffff;
+}
+
+
+.properties-pagination button.active {
+  border-color: #0b0b0b;
+
+  background: #0b0b0b;
+
+  color: #ffffff;
+}
+
+
+.properties-pagination button:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .properties-section {
+    padding: 85px 0;
+  }
+
+
+  .properties-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+    gap: 20px;
+  }
+
+
+  .properties-results-header {
+    gap: 25px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .properties-results-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 22px;
+  }
+
+
+  .properties-sort {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+
+  .properties-sort select {
+    flex: 1;
+
+    max-width: 240px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .properties-intro-container,
+  .properties-container {
+    width: calc(100% - 32px);
+  }
+
+
+  /* =====================================
+     COMPACT HERO
+  ===================================== */
+
+  .properties-intro-section {
+    min-height: 350px;
+
+    height: 52vh;
+  }
+
+
+  .properties-intro-label {
+    margin-bottom: 14px;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .properties-intro-label::before {
+    width: 25px;
+  }
+
+
+  .properties-intro-content h1 {
+    font-size: 43px;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .properties-intro-content p {
+    max-width: 430px;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  /* =====================================
+     PROPERTIES
+  ===================================== */
+
+  .properties-section {
+    padding: 70px 0 80px;
+  }
+
+
+  .properties-results-header {
+    margin-bottom: 30px;
+
+    padding-bottom: 22px;
+  }
+
+
+  .properties-results-title h2 {
+    font-size: 36px;
+  }
+
+
+  .properties-sort {
+    width: 100%;
+  }
+
+
+  .properties-sort select {
+    width: 100%;
+
+    max-width: none;
+  }
+
+
+  /* =====================================
+     GRID
+  ===================================== */
+
+  .properties-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  /* =====================================
+     EMPTY
+  ===================================== */
+
+  .properties-empty {
+    padding: 65px 20px;
+  }
+
+
+  /* =====================================
+     PAGINATION
+  ===================================== */
+
+  .properties-pagination {
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+  .properties-intro-section {
+    min-height: 330px;
+
+    height: auto;
+
+    padding: 65px 0;
+  }
+
+
+  .properties-intro-content h1 {
+    font-size: 39px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .properties-intro-content p {
+    font-size: 12px;
+  }
+
+
+  .properties-section {
+    padding: 60px 0 70px;
+  }
+
+
+  .properties-results-title h2 {
+    font-size: 33px;
+  }
+
+
+  .properties-sort {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 9px;
+  }
+
+
+  .properties-sort select {
+    width: 100%;
+  }
+
+
+  .properties-empty {
+    padding: 55px 18px;
+  }
+
+
+  .properties-empty h2 {
+    font-size: 25px;
+  }
+
+}

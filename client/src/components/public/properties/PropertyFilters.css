@@ -1,0 +1,291 @@
+/* =========================================
+   PROPERTY FILTERS
+========================================= */
+
+.property-filters {
+  width: 100%;
+
+  padding: 22px 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e3d8;
+
+  box-shadow:
+    0 6px 20px
+    rgba(20, 18, 10, 0.035);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.property-filters-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+
+.property-filters-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #b18b16;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  line-height: 1;
+}
+
+
+.property-filters-header h3 {
+  margin: 0;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 21px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   CLEAR BUTTON
+========================================= */
+
+.property-clear-button {
+  padding: 5px 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #777268;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease;
+}
+
+.property-clear-button:hover {
+  color: #b18b16;
+}
+
+
+/* =========================================
+   FILTER GRID
+========================================= */
+
+.property-filter-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1.2fr;
+
+  gap: 12px;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.property-filter-field {
+  min-width: 0;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.property-filter-field label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #5f5b53;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   INPUT + SELECT
+========================================= */
+
+.property-filter-field input,
+.property-filter-field select {
+  width: 100%;
+
+  height: 37px;
+
+  padding: 0 10px;
+
+  border: 1px solid #ddd8ce;
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: #fbfaf6;
+
+  color: #25231f;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.property-filter-field input::placeholder {
+  color: #aaa59b;
+}
+
+
+.property-filter-field input:focus,
+.property-filter-field select:focus {
+  border-color: #c9a227;
+
+  background: #ffffff;
+}
+
+
+.property-filter-field select {
+  cursor: pointer;
+}
+
+
+.property-filter-field select:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.property-search-field {
+  grid-column: span 2;
+}
+
+
+/* =========================================
+   SECOND ROW
+========================================= */
+
+/*
+The grid automatically creates:
+
+ROW 1:
+Search | Purpose | Type | Category
+
+ROW 2:
+Society | Block | Min Price | Max Price
+*/
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .property-filter-grid {
+    grid-template-columns:
+      1.7fr
+      1fr
+      1fr;
+  }
+
+  .property-search-field {
+    grid-column: span 3;
+  }
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+  .property-filters {
+    padding: 20px;
+  }
+
+  .property-filter-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .property-search-field {
+    grid-column: span 2;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .property-filters {
+    padding: 18px;
+  }
+
+  .property-filters-header {
+    margin-bottom: 18px;
+  }
+
+  .property-filters-header h3 {
+    font-size: 19px;
+  }
+
+  .property-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .property-search-field {
+    grid-column: span 1;
+  }
+}

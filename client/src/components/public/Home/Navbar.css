@@ -1,0 +1,476 @@
+/* =========================================
+   GULBERG PUBLIC NAVBAR
+========================================= */
+
+.public-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 82px;
+
+  z-index: 1000;
+
+  background: #0b0b0b;
+
+  border-bottom: 1px solid
+    rgba(201, 162, 39, 0.2);
+
+  box-shadow:
+    0 4px 20px
+    rgba(0, 0, 0, 0.15);
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* =========================================
+   SCROLLED NAVBAR
+========================================= */
+
+.public-navbar.navbar-scrolled {
+  background: #0b0b0b;
+
+  border-bottom-color:
+    rgba(201, 162, 39, 0.35);
+
+  box-shadow:
+    0 8px 30px
+    rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.navbar-container {
+  width: min(
+    1240px,
+    calc(100% - 48px)
+  );
+
+  height: 100%;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  flex-shrink: 0;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+/* Gold G box */
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #c9a227;
+
+  color: #c9a227;
+
+  font-family: Georgia, serif;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.navbar-brand:hover .brand-mark {
+  background: #c9a227;
+  color: #0b0b0b;
+}
+
+/* Brand text */
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.brand-name {
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  line-height: 1;
+}
+
+.brand-subtitle {
+  color: #c9a227;
+
+  font-size: 7px;
+  font-weight: 600;
+
+  letter-spacing: 2.2px;
+
+  line-height: 1.2;
+}
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+
+  gap: 34px;
+
+  margin-left: auto;
+}
+
+.nav-link {
+  position: relative;
+
+  padding: 8px 0;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.78
+  );
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 0.2px;
+
+  transition:
+    color 0.2s ease;
+}
+
+/* Gold underline */
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1px;
+
+  background: #c9a227;
+
+  transition:
+    width 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: #ffffff;
+}
+
+/* =========================================
+   ENQUIRE BUTTON
+========================================= */
+
+.navbar-cta {
+  min-width: 118px;
+
+  padding: 11px 17px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #f7f3e8;
+  border-radius: 4px;
+
+  background: #f7f3e8;
+
+  color: #0b0b0b;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar-cta:hover {
+  border-color: #c9a227;
+
+  background: #c9a227;
+
+  color: #0b0b0b;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu-button {
+  display: none;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 8px;
+
+  border: 1px solid
+    rgba(201, 162, 39, 0.5);
+
+  border-radius: 4px;
+
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.mobile-menu-button span {
+  display: block;
+
+  width: 20px;
+  height: 1px;
+
+  margin: 4px auto;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+/* Hamburger → X */
+
+.mobile-menu-button.menu-open
+  span:nth-child(1) {
+  transform:
+    translateY(5px)
+    rotate(45deg);
+}
+
+.mobile-menu-button.menu-open
+  span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-button.menu-open
+  span:nth-child(3) {
+  transform:
+    translateY(-5px)
+    rotate(-45deg);
+}
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+.mobile-navigation {
+  display: none;
+}
+
+.mobile-navigation-open {
+  display: flex;
+
+  flex-direction: column;
+
+  width: min(
+    1240px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  padding: 8px 0 20px;
+
+  background: #0b0b0b;
+}
+
+/* Mobile links */
+
+.mobile-nav-link {
+  padding: 14px 4px;
+
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.85
+  );
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition:
+    color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: #c9a227;
+}
+
+/* Mobile CTA */
+
+.mobile-nav-cta {
+  margin-top: 14px;
+
+  padding: 12px;
+
+  border: 1px solid #f7f3e8;
+
+  border-radius: 4px;
+
+  background: #f7f3e8;
+
+  color: #0b0b0b;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.mobile-nav-cta:hover {
+  border-color: #c9a227;
+  background: #c9a227;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .navbar-links,
+  .navbar-cta {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+
+    margin-left: auto;
+  }
+
+  .mobile-navigation {
+    display: flex;
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+    opacity: 0;
+
+    transition:
+      max-height 0.3s ease,
+      opacity 0.2s ease,
+      padding 0.3s ease;
+  }
+
+  .mobile-navigation-open {
+    max-height: 400px;
+
+    padding-top: 8px;
+    padding-bottom: 20px;
+
+    opacity: 1;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+  .public-navbar {
+    height: 72px;
+  }
+
+  .navbar-container {
+    width: calc(100% - 32px);
+  }
+
+  .mobile-navigation {
+    width: calc(100% - 32px);
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+
+    font-size: 18px;
+  }
+
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .brand-subtitle {
+    font-size: 6px;
+
+    letter-spacing: 1.8px;
+  }
+}

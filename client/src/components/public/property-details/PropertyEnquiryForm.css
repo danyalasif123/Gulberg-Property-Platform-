@@ -1,0 +1,178 @@
+.property-enquiry {
+  position: sticky;
+
+  top: 105px;
+
+  padding: 28px;
+
+  background: #0b0b0b;
+
+  color: #ffffff;
+}
+
+.property-enquiry .property-section-label {
+  color: #c9a227;
+}
+
+.property-enquiry h2 {
+  margin: 8px 0 10px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 27px;
+
+  font-weight: 400;
+}
+
+.property-enquiry > p {
+  margin: 0 0 25px;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.58
+  );
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.property-enquiry-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.enquiry-field label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  );
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+.enquiry-field input,
+.enquiry-field textarea {
+  width: 100%;
+
+  padding: 11px;
+
+  border: 1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.15
+    );
+
+  border-radius: 0;
+
+  outline: none;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.05
+  );
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  resize: vertical;
+
+  transition:
+    border-color 0.2s ease;
+}
+
+.enquiry-field input {
+  height: 40px;
+}
+
+.enquiry-field input::placeholder,
+.enquiry-field textarea::placeholder {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.35
+  );
+}
+
+.enquiry-field input:focus,
+.enquiry-field textarea:focus {
+  border-color: #c9a227;
+}
+
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.property-enquiry-submit {
+  width: 100%;
+
+  height: 43px;
+
+  margin-top: 4px;
+
+  border: 1px solid #c9a227;
+
+  background: #c9a227;
+
+  color: #0b0b0b;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.property-enquiry-submit:hover {
+  background: #f7f3e8;
+
+  border-color: #f7f3e8;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .property-enquiry {
+    position: static;
+  }
+}

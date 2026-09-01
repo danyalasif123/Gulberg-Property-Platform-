@@ -1,0 +1,1192 @@
+/* =========================================================
+   PUBLIC LOCATIONS PAGE
+   Gulberg Property Platform
+========================================================= */
+
+.public-locations-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #f7f3e8;
+  color: #0b0b0b;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.locations-container {
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.locations-hero {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 390px;
+  height: 48vh;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      #0b0b0b 0%,
+      #17140d 55%,
+      #252014 100%
+    );
+}
+
+
+/* =========================================================
+   HERO GOLD GLOW
+========================================================= */
+
+.locations-hero::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 75% 50%,
+      rgba(
+        201,
+        162,
+        39,
+        0.18
+      ),
+      transparent 38%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.locations-hero::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(
+        11,
+        11,
+        11,
+        0.95
+      ) 0%,
+      rgba(
+        11,
+        11,
+        11,
+        0.72
+      ) 55%,
+      rgba(
+        11,
+        11,
+        11,
+        0.45
+      ) 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   Creates visible spacing below navbar
+========================================================= */
+
+.locations-hero .locations-container {
+  position: relative;
+
+  z-index: 2;
+
+  /*
+   * Moves hero content down slightly
+   * so EXPLORE GULBERG is not too close
+   * to the navbar.
+   */
+  transform: translateY(35px);
+}
+
+
+/* =========================================================
+   HERO EYEBROW
+========================================================= */
+
+.locations-eyebrow {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+  color: #c9a227;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   EYEBROW LINE
+========================================================= */
+
+.locations-eyebrow::before {
+  content: "";
+
+  width: 32px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: #c9a227;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.locations-hero h1 {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    44px,
+    5.5vw,
+    68px
+  );
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+}
+
+
+/* =========================================================
+   HERO TITLE GOLD PART
+========================================================= */
+
+.locations-hero h1 span {
+  display: inline;
+
+  color: #c9a227;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.locations-hero p {
+  max-width: 540px;
+
+  margin: 22px 0 0;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.68
+  );
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   LOCATIONS SECTION
+========================================================= */
+
+.locations-section {
+  width: 100%;
+
+  padding: 100px 0 110px;
+
+  background: #f7f3e8;
+
+  color: #0b0b0b;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.locations-heading {
+  width: 100%;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 55px;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #ded8c9;
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.locations-label {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #b18b16;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.locations-heading h2 {
+  margin: 0;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    36px,
+    4vw,
+    50px
+  );
+
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  letter-spacing: -0.8px;
+}
+
+
+/* =========================================================
+   SECTION DESCRIPTION
+========================================================= */
+
+.locations-heading p {
+  max-width: 360px;
+
+  margin: 0;
+
+  color: #68645b;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.locations-error {
+  padding: 16px 20px;
+
+  margin-bottom: 30px;
+
+  border: 1px solid #d6b8a8;
+
+  background: #fbfaf5;
+
+  color: #8d4935;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.locations-loading {
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  color: #68645b;
+}
+
+
+.locations-spinner {
+  width: 32px;
+
+  height: 32px;
+
+  border: 2px solid #ded8c9;
+
+  border-top-color: #b18b16;
+
+  border-radius: 50%;
+
+  animation:
+    locations-spin
+    0.8s
+    linear
+    infinite;
+}
+
+
+@keyframes locations-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.locations-empty {
+  padding: 70px 20px;
+
+  text-align: center;
+
+  border: 1px solid #ded8c9;
+
+  background: #fbfaf5;
+}
+
+
+.locations-empty h3 {
+  margin: 0 0 10px;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+}
+
+
+.locations-empty p {
+  margin: 0;
+
+  color: #777268;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   SOCIETY LIST
+========================================================= */
+
+.locations-list {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+
+/* =========================================================
+   SOCIETY CARD
+========================================================= */
+
+.location-society {
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid #ded8c9;
+
+  background: #fbfaf5;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.location-society:hover {
+  background: #ffffff;
+
+  border-color: #c9a227;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 14px 32px
+    rgba(
+      20,
+      18,
+      10,
+      0.08
+    );
+}
+
+
+/* =========================================================
+   SOCIETY HEADER
+========================================================= */
+
+.location-society-header {
+  min-height: 190px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+
+  padding: 28px;
+}
+
+
+/* =========================================================
+   SOCIETY IMAGE
+========================================================= */
+
+.location-society-image {
+  width: 180px;
+
+  height: 135px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #e9e3d5;
+
+  border: 1px solid #ded8c9;
+}
+
+
+.location-society-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   IMAGE PLACEHOLDER
+========================================================= */
+
+.location-image-placeholder {
+  width: 100%;
+
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #0b0b0b;
+
+  color: #c9a227;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 42px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   SOCIETY INFORMATION
+========================================================= */
+
+.location-society-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   SOCIETY TYPE
+========================================================= */
+
+.location-type {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #b18b16;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   SOCIETY TITLE
+========================================================= */
+
+.location-society-info h3 {
+  margin: 0;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 30px;
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  letter-spacing: -0.3px;
+}
+
+
+/* =========================================================
+   SOCIETY DESCRIPTION
+========================================================= */
+
+.location-society-info p {
+  max-width: 550px;
+
+  margin: 12px 0 0;
+
+  color: #777268;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   VIEW PROPERTIES BUTTON
+========================================================= */
+
+.location-view-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  flex-shrink: 0;
+
+  padding: 13px 18px;
+
+  border: 1px solid #c9a227;
+
+  background: transparent;
+
+  color: #0b0b0b;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.location-view-button span {
+  color: #b18b16;
+
+  font-size: 17px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.location-view-button:hover {
+  background: #0b0b0b;
+
+  border-color: #0b0b0b;
+
+  color: #ffffff;
+}
+
+
+.location-view-button:hover span {
+  color: #c9a227;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   BLOCK SECTION
+========================================================= */
+
+.location-blocks {
+  padding: 24px 28px 28px;
+
+  border-top: 1px solid #ded8c9;
+
+  background: #f7f3e8;
+}
+
+
+/* =========================================================
+   BLOCK HEADER
+========================================================= */
+
+.location-blocks-heading {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 16px;
+}
+
+
+.location-blocks-heading span {
+  color: #b18b16;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.location-blocks-heading small {
+  color: #8a867c;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   BLOCK GRID
+========================================================= */
+
+.location-block-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(0, 1fr)
+    );
+
+  border-top: 1px solid #ded8c9;
+
+  border-left: 1px solid #ded8c9;
+}
+
+
+/* =========================================================
+   BLOCK CARD
+========================================================= */
+
+.location-block-card {
+  min-height: 100px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 20px;
+
+  border-right: 1px solid #ded8c9;
+
+  border-bottom: 1px solid #ded8c9;
+
+  background: #fbfaf5;
+
+  color: #0b0b0b;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.location-block-card:hover {
+  background: #ffffff;
+
+  color: #0b0b0b;
+
+  border-color: #c9a227;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   BLOCK LABEL
+========================================================= */
+
+.block-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #b18b16;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+
+/* =========================================================
+   BLOCK TITLE
+========================================================= */
+
+.location-block-card h4 {
+  margin: 0;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   BLOCK ARROW
+========================================================= */
+
+.block-arrow {
+  color: #b18b16;
+
+  font-size: 20px;
+
+  line-height: 1;
+
+  transition:
+    transform 0.25s ease;
+}
+
+
+.location-block-card:hover .block-arrow {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   NO BLOCKS
+========================================================= */
+
+.location-no-blocks {
+  padding: 20px;
+
+  border: 1px dashed #d6cfbf;
+
+  color: #8a867c;
+
+  text-align: center;
+
+  font-size: 12px;
+
+  background: #fbfaf5;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .locations-section {
+    padding: 85px 0;
+  }
+
+
+  .location-society-header {
+    gap: 22px;
+  }
+
+
+  .location-society-image {
+    width: 160px;
+
+    height: 125px;
+  }
+
+
+  .location-society-info h3 {
+    font-size: 27px;
+  }
+
+
+  .location-block-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .locations-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  .locations-heading p {
+    max-width: 500px;
+  }
+
+
+  .location-society-header {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+
+  .location-view-button {
+    margin-left: 182px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .locations-container {
+    width: calc(100% - 32px);
+  }
+
+
+  /* =========================================
+     COMPACT MOBILE HERO
+  ========================================= */
+
+  .locations-hero {
+    min-height: 350px;
+
+    height: 52vh;
+  }
+
+
+  /*
+   * Slightly smaller spacing on mobile
+   */
+  .locations-hero .locations-container {
+    transform: translateY(20px);
+  }
+
+
+  .locations-eyebrow {
+    margin-bottom: 14px;
+
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+
+  .locations-eyebrow::before {
+    width: 25px;
+  }
+
+
+  .locations-hero h1 {
+    font-size: 43px;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .locations-hero p {
+    max-width: 430px;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+
+  /* =========================================
+     SECTION
+  ========================================= */
+
+  .locations-section {
+    padding: 70px 0 80px;
+  }
+
+
+  .locations-heading {
+    margin-bottom: 40px;
+  }
+
+
+  .locations-heading h2 {
+    font-size: 38px;
+  }
+
+
+  /* =========================================
+     SOCIETY
+  ========================================= */
+
+  .location-society-header {
+    display: block;
+
+    padding: 20px;
+  }
+
+
+  .location-society-image {
+    width: 100%;
+
+    height: 190px;
+
+    margin-bottom: 22px;
+  }
+
+
+  .location-society-info h3 {
+    font-size: 28px;
+  }
+
+
+  .location-view-button {
+    width: 100%;
+
+    margin: 22px 0 0;
+  }
+
+
+  /* =========================================
+     BLOCKS
+  ========================================= */
+
+  .location-blocks {
+    padding: 20px;
+  }
+
+
+  .location-block-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .location-block-card {
+    min-height: 85px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .locations-hero {
+    min-height: 330px;
+
+    height: auto;
+
+    padding: 65px 0;
+  }
+
+
+  /*
+   * Keep the content separated from navbar
+   * without making the hero excessively tall.
+   */
+  .locations-hero .locations-container {
+    transform: translateY(15px);
+  }
+
+
+  .locations-hero h1 {
+    font-size: 39px;
+
+    letter-spacing: -1px;
+  }
+
+
+  .locations-hero p {
+    font-size: 12px;
+  }
+
+
+  .locations-section {
+    padding: 60px 0 70px;
+  }
+
+
+  .locations-heading h2 {
+    font-size: 34px;
+  }
+
+
+  .location-society-info h3 {
+    font-size: 25px;
+  }
+
+
+  .location-block-card {
+    padding: 18px;
+  }
+
+}

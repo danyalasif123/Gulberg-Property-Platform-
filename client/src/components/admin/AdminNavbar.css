@@ -1,0 +1,123 @@
+/* =========================================
+   ADMIN NAVBAR
+========================================= */
+
+.admin-navbar {
+  position: fixed;
+
+  top: 0;
+  left: 220px;
+  right: 0;
+
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  box-sizing: border-box;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  z-index: 1000;
+}
+
+
+/* =========================================
+   LEFT
+========================================= */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   RIGHT
+========================================= */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   ADMIN PROFILE
+========================================= */
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.admin-avatar {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+
+  background: #f9fafb;
+
+  color: #374151;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   ADMIN INFO
+========================================= */
+
+.admin-info {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.2;
+}
+
+.admin-info strong {
+  color: #111827;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.admin-info span {
+  margin-top: 2px;
+
+  color: #9ca3af;
+
+  font-size: 10px;
+}

@@ -1,0 +1,886 @@
+/* =========================================================
+   CATEGORIES PAGE
+   Enterprise / Business Central Style
+========================================================= */
+
+.categories-page {
+  min-height: calc(100vh - 64px);
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f9fafb;
+
+  color: #111827;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.categories-page-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 20px;
+}
+
+
+.categories-page-eyebrow {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #9ca3af;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  line-height: 1.3;
+}
+
+
+.categories-page-header h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+
+.categories-page-header p {
+  margin: 5px 0 0;
+
+  color: #6b7280;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   ADD CATEGORY BUTTON
+========================================================= */
+
+.add-category-button {
+  height: 34px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 0 13px;
+
+  border: 1px solid #374151;
+
+  border-radius: 3px;
+
+  background: #374151;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+
+.add-category-button span {
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+.add-category-button:hover {
+  background: #111827;
+
+  border-color: #111827;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.categories-page-error {
+  margin-bottom: 14px;
+
+  padding: 9px 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #374151;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   MAIN PANEL
+========================================================= */
+
+.categories-panel {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   PANEL HEADER
+========================================================= */
+
+.categories-panel-header {
+  min-height: 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 12px 16px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  box-sizing: border-box;
+}
+
+
+.categories-panel-header > div {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 10px;
+}
+
+
+.categories-panel-header h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+
+.categories-panel-header span {
+  color: #9ca3af;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   REFRESH
+========================================================= */
+
+.refresh-categories {
+  height: 30px;
+
+  padding: 0 10px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #4b5563;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+.refresh-categories:hover:not(:disabled) {
+  background: #f3f4f6;
+
+  border-color: #9ca3af;
+
+  color: #111827;
+}
+
+
+.refresh-categories:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.categories-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.categories-table {
+  width: 100%;
+
+  min-width: 850px;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+}
+
+
+/* =========================================================
+   TABLE HEAD
+========================================================= */
+
+.categories-table thead {
+  background: #fafafa;
+}
+
+
+.categories-table th {
+  height: 38px;
+
+  padding: 0 12px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  color: #6b7280;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  text-align: left;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   COLUMN WIDTHS
+========================================================= */
+
+.categories-table th:nth-child(1) {
+  width: 30%;
+}
+
+.categories-table th:nth-child(2) {
+  width: 17%;
+}
+
+.categories-table th:nth-child(3) {
+  width: 13%;
+}
+
+.categories-table th:nth-child(4) {
+  width: 9%;
+}
+
+.categories-table th:nth-child(5) {
+  width: 12%;
+}
+
+.categories-table th:nth-child(6) {
+  width: 19%;
+}
+
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.categories-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+
+  transition:
+    background-color 0.12s ease;
+}
+
+
+.categories-table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+
+.categories-table tbody tr:hover {
+  background: #fafafa;
+}
+
+
+.categories-table td {
+  height: 62px;
+
+  padding: 8px 12px;
+
+  color: #374151;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CATEGORY NAME
+========================================================= */
+
+.category-table-name {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  min-width: 0;
+}
+
+
+.category-table-name img,
+.category-table-placeholder {
+  width: 38px;
+
+  height: 38px;
+
+  flex-shrink: 0;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 3px;
+
+  object-fit: cover;
+
+  background: #f9fafb;
+}
+
+
+.category-table-placeholder {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #9ca3af;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 16px;
+}
+
+
+.category-table-name > div:last-child {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.category-table-name strong {
+  overflow: hidden;
+
+  color: #374151;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+.category-table-name span {
+  max-width: 250px;
+
+  overflow: hidden;
+
+  color: #9ca3af;
+
+  font-size: 9px;
+
+  line-height: 1.3;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   SLUG
+========================================================= */
+
+.categories-table code {
+  display: inline-block;
+
+  max-width: 100%;
+
+  padding: 3px 5px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 2px;
+
+  background: #fafafa;
+
+  color: #6b7280;
+
+  font-family:
+    Consolas,
+    "Courier New",
+    monospace;
+
+  font-size: 9px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  vertical-align: middle;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.category-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+.category-status > span {
+  width: 5px;
+
+  height: 5px;
+
+  display: inline-block;
+
+  border-radius: 50%;
+}
+
+
+.category-status.active {
+  color: #374151;
+}
+
+
+.category-status.active > span {
+  background: #6b7280;
+}
+
+
+.category-status.inactive {
+  color: #9ca3af;
+}
+
+
+.category-status.inactive > span {
+  background: #d1d5db;
+}
+
+
+/* =========================================================
+   ORDER
+========================================================= */
+
+.category-order {
+  color: #6b7280;
+
+  font-size: 10px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.category-date {
+  color: #6b7280;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.category-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.category-actions button {
+  height: 28px;
+
+  padding: 0 9px;
+
+  border-radius: 3px;
+
+  font-family: inherit;
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   EDIT
+========================================================= */
+
+.edit-category-button {
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #4b5563;
+}
+
+
+.edit-category-button:hover {
+  border-color: #9ca3af;
+
+  background: #f3f4f6;
+
+  color: #111827;
+}
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+.delete-category-button {
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #6b7280;
+}
+
+
+.delete-category-button:hover:not(:disabled) {
+  border-color: #9ca3af;
+
+  background: #f3f4f6;
+
+  color: #111827;
+}
+
+
+.delete-category-button:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.categories-loading {
+  min-height: 300px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  color: #6b7280;
+
+  font-size: 10px;
+}
+
+
+.loading-spinner {
+  width: 28px;
+
+  height: 28px;
+
+  border: 2px solid #e5e7eb;
+
+  border-top-color: #374151;
+
+  border-radius: 50%;
+
+  animation:
+    categories-spin
+    0.8s
+    linear
+    infinite;
+}
+
+
+@keyframes categories-spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.categories-empty {
+  min-height: 320px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+
+.categories-empty-icon {
+  width: 46px;
+
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  border: 1px solid #d1d5db;
+
+  color: #9ca3af;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+}
+
+
+.categories-empty h3 {
+  margin: 0 0 6px;
+
+  color: #374151;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+.categories-empty p {
+  max-width: 320px;
+
+  margin: 0 0 16px;
+
+  color: #9ca3af;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+.empty-add-button {
+  height: 32px;
+
+  padding: 0 12px;
+
+  border: 1px solid #374151;
+
+  border-radius: 3px;
+
+  background: #374151;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.empty-add-button:hover {
+  background: #111827;
+
+  border-color: #111827;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .categories-page {
+    padding: 20px;
+  }
+
+  .categories-page-header {
+    flex-direction: column;
+  }
+
+  .add-category-button {
+    align-self: flex-start;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .categories-page {
+    padding: 16px;
+  }
+
+  .categories-panel-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .categories-panel-header > div {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 3px;
+  }
+
+  .refresh-categories {
+    align-self: flex-start;
+  }
+
+}

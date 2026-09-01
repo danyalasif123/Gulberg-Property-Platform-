@@ -1,0 +1,26 @@
+{
+  "name": "gulberg-property-platform-server",
+  "version": "1.0.0",
+  "description": "Backend API for Gulberg Property Platform",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+  "dev": "nodemon server.js",
+  "start": "node server.js",
+    "create-admin": "node scripts/createAdmin.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.10.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
+    "multer": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

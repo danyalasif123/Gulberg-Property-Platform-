@@ -1,0 +1,957 @@
+/* =========================================================
+   ENQUIRY VIEW PAGE
+========================================================= */
+
+.enquiry-view-content {
+  min-height: calc(100vh - 64px);
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f9fafb;
+
+  color: #111827;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.enquiry-view-topbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+
+.back-enquiries-button {
+  height: 32px;
+
+  padding: 0 11px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #4b5563;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+
+.back-enquiries-button:hover {
+  background: #f3f4f6;
+
+  border-color: #9ca3af;
+
+  color: #111827;
+}
+
+
+.enquiry-view-reference {
+  color: #9ca3af;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.enquiry-view-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-bottom: 20px;
+}
+
+
+.enquiry-view-eyebrow {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #9ca3af;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+
+.enquiry-view-header h1 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  line-height: 1.25;
+}
+
+
+.enquiry-view-header p {
+  margin: 5px 0 0;
+
+  color: #9ca3af;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.enquiry-header-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+/* =========================================================
+   STATUS SELECT
+========================================================= */
+
+.enquiry-detail-status {
+  height: 32px;
+
+  min-width: 105px;
+
+  padding: 0 9px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #4b5563;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  outline: none;
+
+  cursor: pointer;
+}
+
+
+.enquiry-detail-status:focus {
+  border-color: #9ca3af;
+}
+
+
+.enquiry-detail-status:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+.detail-delete-button {
+  height: 32px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #6b7280;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+
+.detail-delete-button:hover:not(:disabled) {
+  background: #f3f4f6;
+
+  border-color: #9ca3af;
+
+  color: #111827;
+}
+
+
+.detail-delete-button:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   ALERT
+========================================================= */
+
+.enquiry-view-alert {
+  margin-bottom: 16px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #374151;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   MAIN GRID
+========================================================= */
+
+.enquiry-view-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    300px;
+
+  gap: 18px;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.enquiry-view-main {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   DETAIL CARD
+========================================================= */
+
+.enquiry-detail-card {
+  width: 100%;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   DETAIL CARD HEADER
+========================================================= */
+
+.detail-card-header {
+  padding: 16px 18px;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+.detail-card-header span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #9ca3af;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+
+.detail-card-header h2 {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================================
+   BUYER DETAIL
+========================================================= */
+
+.buyer-detail {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 20px 18px;
+}
+
+
+.buyer-detail-avatar {
+  width: 52px;
+
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 50%;
+
+  background: #fafafa;
+
+  color: #6b7280;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+.buyer-detail-info {
+  min-width: 0;
+}
+
+
+.buyer-detail-info h3 {
+  margin: 0 0 7px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.buyer-detail-contact {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+
+.buyer-detail-contact a {
+  color: #6b7280;
+
+  font-size: 10px;
+
+  text-decoration: none;
+}
+
+
+.buyer-detail-contact a:hover {
+  color: #111827;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   FULL MESSAGE
+========================================================= */
+
+.enquiry-full-message {
+  padding: 20px 18px;
+}
+
+
+.enquiry-full-message p {
+  margin: 0;
+
+  color: #4b5563;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+
+.enquiry-full-message .no-message {
+  color: #9ca3af;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   PROPERTY
+========================================================= */
+
+.property-detail {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 20px 18px;
+}
+
+
+.property-detail-icon {
+  width: 46px;
+
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d1d5db;
+
+  background: #fafafa;
+
+  color: #6b7280;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+.property-detail-info {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.property-detail-info h3 {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #374151;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  text-overflow: ellipsis;
+}
+
+
+.property-detail-info span {
+  color: #9ca3af;
+
+  font-size: 9px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   SIDEBAR
+========================================================= */
+
+.enquiry-view-sidebar {
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+/* =========================================================
+   SIDE CARD
+========================================================= */
+
+.enquiry-side-card {
+  padding: 16px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+.side-card-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #9ca3af;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   LARGE STATUS
+========================================================= */
+
+.large-status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #374151;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+.status-dot {
+  width: 7px;
+
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #9ca3af;
+}
+
+
+.enquiry-large-status-new .status-dot {
+  background: #6b7280;
+}
+
+
+.enquiry-large-status-contacted .status-dot {
+  background: #9ca3af;
+}
+
+
+.enquiry-large-status-closed .status-dot {
+  background: #374151;
+}
+
+
+/* =========================================================
+   SIDE DETAIL LIST
+========================================================= */
+
+.side-detail-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+.side-detail {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  padding-bottom: 13px;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+.side-detail:last-child {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+
+.side-detail > span {
+  color: #9ca3af;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+
+.side-detail strong {
+  overflow: hidden;
+
+  color: #374151;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  word-break: break-word;
+}
+
+
+.side-detail a {
+  overflow: hidden;
+
+  color: #4b5563;
+
+  font-size: 10px;
+
+  line-height: 1.4;
+
+  text-decoration: none;
+
+  word-break: break-word;
+}
+
+
+.side-detail a:hover {
+  color: #111827;
+
+  text-decoration: underline;
+}
+
+
+.side-detail code {
+  display: block;
+
+  overflow: hidden;
+
+  color: #9ca3af;
+
+  font-family:
+    Consolas,
+    Monaco,
+    monospace;
+
+  font-size: 8px;
+
+  line-height: 1.4;
+
+  word-break: break-all;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.enquiry-view-loading {
+  min-height: 400px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #6b7280;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   NOT FOUND
+========================================================= */
+
+.enquiry-view-not-found {
+  min-height: 450px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+.not-found-icon {
+  width: 42px;
+
+  height: 42px;
+
+  margin-bottom: 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 50%;
+
+  color: #6b7280;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+.enquiry-view-not-found h2 {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+
+
+.enquiry-view-not-found p {
+  max-width: 400px;
+
+  margin: 7px 0 18px;
+
+  color: #9ca3af;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+.enquiry-view-not-found button {
+  height: 32px;
+
+  padding: 0 13px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #4b5563;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+
+.enquiry-view-not-found button:hover {
+  background: #f3f4f6;
+
+  color: #111827;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .enquiry-view-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .enquiry-view-sidebar {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .enquiry-view-content {
+    padding: 18px;
+  }
+
+
+  .enquiry-view-topbar {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .enquiry-view-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  .enquiry-header-actions {
+    width: 100%;
+  }
+
+
+  .enquiry-detail-status {
+    flex: 1;
+  }
+
+
+  .detail-delete-button {
+    flex: 0 0 auto;
+  }
+
+
+  .enquiry-view-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .enquiry-view-content {
+    padding: 15px;
+  }
+
+
+  .enquiry-view-header h1 {
+    font-size: 21px;
+  }
+
+
+  .enquiry-header-actions {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+
+  .enquiry-detail-status,
+  .detail-delete-button {
+    width: 100%;
+  }
+
+
+  .buyer-detail {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .buyer-detail-contact {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+}

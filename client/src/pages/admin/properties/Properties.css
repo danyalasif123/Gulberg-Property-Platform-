@@ -1,0 +1,244 @@
+/* =========================================
+   ADMIN GLOBAL LAYOUT
+========================================= */
+
+.admin-layout {
+  min-height: 100vh;
+
+  background: #f8f9fa;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   MAIN AREA
+
+   Sidebar = 220px
+   Navbar  = 64px
+========================================= */
+
+.admin-main {
+  margin-left: 220px;
+
+  min-height: 100vh;
+
+  padding-top: 64px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   PROPERTIES CONTENT
+========================================= */
+
+.properties-content {
+  min-height: calc(100vh - 64px);
+
+  padding: 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.properties-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+}
+
+.properties-header h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+.properties-header p {
+  margin: 4px 0 0;
+
+  color: #6b7280;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   ADD PROPERTY BUTTON
+========================================= */
+
+.add-property-button {
+  height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 13px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #374151;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.add-property-button:hover {
+  background: #f3f4f6;
+
+  border-color: #9ca3af;
+
+  color: #111827;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.properties-error {
+  margin-bottom: 14px;
+
+  padding: 9px 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  color: #374151;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .admin-sidebar {
+    width: 190px;
+  }
+
+  .admin-navbar {
+    left: 190px;
+  }
+
+  .admin-main {
+    margin-left: 190px;
+  }
+
+  .properties-content {
+    padding: 18px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .admin-sidebar {
+    width: 60px;
+  }
+
+  .sidebar-logo {
+    padding: 0;
+
+    align-items: center;
+  }
+
+  .sidebar-logo h2 {
+    font-size: 13px;
+  }
+
+  .sidebar-logo span {
+    display: none;
+  }
+
+  .sidebar-nav {
+    padding: 15px 6px;
+  }
+
+  .sidebar-section-title {
+    display: none;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  .sidebar-link span {
+    font-size: 0;
+  }
+
+  .sidebar-link span::first-letter {
+    font-size: 12px;
+  }
+
+  .sidebar-bottom {
+    padding: 6px;
+  }
+
+  .sidebar-logout {
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 0;
+  }
+
+  .sidebar-logout::after {
+    content: "↪";
+
+    font-size: 14px;
+  }
+
+  .admin-navbar {
+    left: 60px;
+
+    padding: 0 14px;
+  }
+
+  .admin-main {
+    margin-left: 60px;
+  }
+
+  .admin-info {
+    display: none;
+  }
+
+  .properties-header {
+    flex-direction: column;
+  }
+}

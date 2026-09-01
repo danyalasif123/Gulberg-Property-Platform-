@@ -1,0 +1,125 @@
+/* =========================================
+   PROPERTY INFO
+========================================= */
+
+.property-info {
+  width: 100%;
+
+  padding: 30px 0;
+
+  border-bottom: 1px solid #e1dcd2;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.property-info-grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  border-top: 1px solid #e1dcd2;
+
+  border-left: 1px solid #e1dcd2;
+}
+
+
+/* =========================================
+   ITEM
+========================================= */
+
+.property-info-item {
+  min-height: 76px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 13px;
+
+  border-right: 1px solid #e1dcd2;
+
+  border-bottom: 1px solid #e1dcd2;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.property-info-item span {
+  margin-bottom: 7px;
+
+  color: #9a958c;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.property-info-item strong {
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .property-info-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+  .property-info {
+    padding: 25px 0;
+  }
+
+  .property-info-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .property-info-item {
+    min-height: 70px;
+
+    padding: 12px;
+  }
+}

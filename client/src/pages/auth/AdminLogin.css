@@ -1,0 +1,132 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f5f7fb;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1f2b;
+}
+
+.login-header p {
+  margin: 8px 0 0;
+  font-size: 15px;
+  color: #737b8c;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #303746;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #d9dee8;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #1a1f2b;
+  font-size: 15px;
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #a0a7b4;
+}
+
+.form-group input:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.1);
+}
+
+.login-container button {
+  width: 100%;
+  height: 48px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 8px;
+  background: #1d4ed8;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease,
+              transform 0.1s ease;
+}
+
+.login-container button:hover {
+  background: #1e40af;
+}
+
+.login-container button:active {
+  transform: translateY(1px);
+}
+
+.login-container button:disabled {
+  background: #93a4c7;
+  cursor: not-allowed;
+}
+
+.login-error {
+  padding: 12px 14px;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-page {
+    padding: 16px;
+  }
+
+  .login-container {
+    padding: 28px 22px;
+    border-radius: 12px;
+  }
+
+  .login-header h1 {
+    font-size: 24px;
+  }
+}

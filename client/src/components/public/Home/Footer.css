@@ -1,0 +1,204 @@
+/* =========================================
+   PUBLIC FOOTER
+========================================= */
+
+.public-footer {
+  width: 100%;
+
+  background: #0b0b0b;
+
+  color: #ffffff;
+
+  border-top: 1px solid
+    rgba(201, 162, 39, 0.2);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.footer-container {
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  min-height: 110px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.footer-brand-mark {
+  width: 36px;
+
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #c9a227;
+
+  color: #c9a227;
+
+  font-family: Georgia, serif;
+
+  font-size: 18px;
+}
+
+.footer-brand-name {
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+}
+
+.footer-brand-subtitle {
+  margin-top: 4px;
+
+  color: #c9a227;
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+}
+
+.footer-links a {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.65
+  );
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  transition:
+    color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #c9a227;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  min-height: 55px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.38
+  );
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .footer-container {
+    width: calc(100% - 32px);
+
+    min-height: 140px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 22px;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    width: calc(100% - 32px);
+
+    min-height: 70px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 7px;
+  }
+}

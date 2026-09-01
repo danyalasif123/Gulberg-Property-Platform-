@@ -1,0 +1,605 @@
+/* =========================================
+   FEATURED PROPERTIES SECTION
+========================================= */
+
+.featured-properties {
+  width: 100%;
+
+  padding: 110px 0 120px;
+
+  background: #f7f3e8;
+
+  color: #0b0b0b;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.featured-container {
+  width: min(
+    1280px,
+    calc(100% - 64px)
+  );
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.featured-heading {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 50px;
+}
+
+.featured-heading-text {
+  max-width: 700px;
+}
+
+
+/* =========================================
+   SECTION EYEBROW
+========================================= */
+
+.section-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+
+  color: #c9a227;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  line-height: 1;
+}
+
+.section-eyebrow::before {
+  content: "";
+
+  width: 34px;
+  height: 1px;
+
+  background: #c9a227;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.featured-heading h2 {
+  margin: 0;
+
+  color: #0b0b0b;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(
+    42px,
+    4.2vw,
+    58px
+  );
+
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  letter-spacing: -1.8px;
+}
+
+
+/* =========================================
+   SECTION DESCRIPTION
+========================================= */
+
+.featured-heading p {
+  max-width: 580px;
+
+  margin: 17px 0 0;
+
+  color: #707069;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   VIEW ALL PROPERTIES
+========================================= */
+
+.view-all-properties {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid
+    rgba(
+      11,
+      11,
+      11,
+      0.35
+    );
+
+  color: #0b0b0b;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.view-all-properties span {
+  color: #c9a227;
+
+  font-size: 20px;
+
+  line-height: 0;
+
+  transition:
+    transform 0.2s ease;
+}
+
+.view-all-properties:hover {
+  color: #c9a227;
+
+  border-color: #c9a227;
+}
+
+.view-all-properties:hover span {
+  transform:
+    translateX(5px);
+}
+
+
+/* =========================================
+   PROPERTY GRID
+========================================= */
+
+.property-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      3,
+      minmax(0, 1fr)
+    );
+
+  gap: 28px;
+
+  width: 100%;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.featured-empty {
+  width: 100%;
+
+  min-height: 300px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  padding: 40px;
+
+  border: 1px dashed
+    rgba(
+      11,
+      11,
+      11,
+      0.22
+    );
+
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   EMPTY ICON
+========================================= */
+
+.empty-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 17px;
+
+  border: 1px solid #c9a227;
+
+  color: #c9a227;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 25px;
+}
+
+
+/* =========================================
+   EMPTY TITLE
+========================================= */
+
+.featured-empty h3 {
+  margin: 0;
+
+  color: #242420;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 21px;
+
+  font-weight: 400;
+
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   EMPTY DESCRIPTION
+========================================= */
+
+.featured-empty p {
+  margin: 9px 0 0;
+
+  color: #888880;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.featured-error {
+  width: 100%;
+
+  padding: 22px;
+
+  border: 1px solid
+    rgba(
+      180,
+      50,
+      50,
+      0.2
+    );
+
+  border-radius: 7px;
+
+  background: #fff8f8;
+
+  color: #a33b3b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   LOADING SKELETON
+========================================= */
+
+.property-skeleton {
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid
+    #e8e8e3;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   SKELETON IMAGE
+========================================= */
+
+.skeleton-image {
+  width: 100%;
+
+  height: 300px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #eeeeea 25%,
+      #f8f8f4 50%,
+      #eeeeea 75%
+    );
+
+  background-size:
+    200% 100%;
+
+  animation:
+    skeletonLoading
+    1.5s
+    infinite;
+}
+
+
+/* =========================================
+   SKELETON CONTENT
+========================================= */
+
+.skeleton-content {
+  padding:
+    25px 24px;
+}
+
+
+/* =========================================
+   SKELETON LINE
+========================================= */
+
+.skeleton-line {
+  width: 70%;
+
+  height: 14px;
+
+  margin-bottom: 13px;
+
+  border-radius: 3px;
+
+  background: #eeeeea;
+
+  animation:
+    skeletonLoading
+    1.5s
+    infinite;
+}
+
+.skeleton-line.short {
+  width: 48%;
+}
+
+.skeleton-line.price {
+  width: 35%;
+
+  margin-top: 28px;
+}
+
+
+/* =========================================
+   SKELETON ANIMATION
+========================================= */
+
+@keyframes skeletonLoading {
+  0% {
+    background-position:
+      200% 0;
+  }
+
+  100% {
+    background-position:
+      -200% 0;
+  }
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+  .featured-container {
+    width: min(
+      1340px,
+      calc(100% - 80px)
+    );
+  }
+
+  .property-grid {
+    gap: 32px;
+  }
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .featured-container {
+    width: min(
+      1100px,
+      calc(100% - 48px)
+    );
+  }
+
+  .property-grid {
+    gap: 22px;
+  }
+
+  .featured-heading {
+    gap: 30px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .featured-properties {
+    padding:
+      85px 0 95px;
+  }
+
+  .featured-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    margin-bottom: 40px;
+  }
+
+  .featured-heading-text {
+    max-width: 650px;
+  }
+
+  .property-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      );
+
+    gap: 22px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .featured-properties {
+    padding:
+      70px 0 80px;
+  }
+
+  .featured-container {
+    width:
+      calc(100% - 32px);
+  }
+
+  .featured-heading {
+    gap: 18px;
+
+    margin-bottom: 32px;
+  }
+
+  .section-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .section-eyebrow::before {
+    width: 27px;
+  }
+
+  .featured-heading h2 {
+    font-size: 40px;
+
+    letter-spacing: -1px;
+  }
+
+  .featured-heading p {
+    margin-top: 14px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+  .property-grid {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .view-all-properties {
+    font-size: 11px;
+  }
+
+  .featured-empty {
+    min-height: 260px;
+
+    padding: 30px 20px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+  .featured-properties {
+    padding:
+      60px 0 70px;
+  }
+
+  .featured-heading h2 {
+    font-size: 36px;
+  }
+
+  .featured-heading p {
+    font-size: 11px;
+  }
+
+  .property-grid {
+    gap: 18px;
+  }
+
+  .featured-empty h3 {
+    font-size: 19px;
+  }
+}

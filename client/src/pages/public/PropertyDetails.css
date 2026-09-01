@@ -1,0 +1,322 @@
+/* =========================================
+   PROPERTY DETAILS PAGE
+========================================= */
+
+.property-details-page {
+  width: 100%;
+
+  min-height: 100vh;
+
+  background: #f7f3e8;
+
+  color: #0b0b0b;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.property-details-container {
+  width: min(
+    1180px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  padding-top: 120px;
+
+  padding-bottom: 90px;
+}
+
+
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.property-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-bottom: 22px;
+
+  color: #99938a;
+
+  font-size: 10px;
+}
+
+.property-breadcrumb a {
+  color: #777268;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease;
+}
+
+.property-breadcrumb a:hover {
+  color: #b18b16;
+}
+
+.property-breadcrumb span {
+  color: #c4beb4;
+}
+
+.property-breadcrumb strong {
+  color: #0b0b0b;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   MAIN LAYOUT
+========================================= */
+
+.property-details-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    360px;
+
+  gap: 55px;
+
+  margin-top: 45px;
+
+  align-items: start;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.property-details-main {
+  min-width: 0;
+}
+
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.property-details-sidebar {
+  min-width: 0;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.property-details-loading {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  color: #777268;
+}
+
+.property-details-loading p {
+  margin: 0;
+
+  font-size: 12px;
+}
+
+.property-details-spinner {
+  width: 30px;
+
+  height: 30px;
+
+  border: 2px solid #ddd8ce;
+
+  border-top-color: #c9a227;
+
+  border-radius: 50%;
+
+  animation:
+    property-details-spin
+    0.8s linear infinite;
+}
+
+@keyframes property-details-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================================
+   ERROR PAGE
+========================================= */
+
+.property-details-error-page {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 40px;
+
+  text-align: center;
+}
+
+.property-details-error-icon {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #c9a227;
+
+  color: #b18b16;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 20px;
+}
+
+.property-details-error-page h1 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 30px;
+
+  font-weight: 400;
+}
+
+.property-details-error-page p {
+  max-width: 450px;
+
+  margin: 12px 0 25px;
+
+  color: #777268;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+.property-details-error-page button {
+  padding: 11px 18px;
+
+  border: 1px solid #0b0b0b;
+
+  background: #0b0b0b;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.property-details-error-page button:hover {
+  border-color: #c9a227;
+
+  background: #c9a227;
+
+  color: #0b0b0b;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .property-details-layout {
+    grid-template-columns:
+      minmax(0, 1fr)
+      320px;
+
+    gap: 35px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .property-details-container {
+    width: calc(100% - 32px);
+
+    padding-top: 100px;
+
+    padding-bottom: 70px;
+  }
+
+  .property-details-layout {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    margin-top: 35px;
+  }
+
+  .property-details-sidebar {
+    order: 2;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 500px) {
+
+  .property-details-container {
+    width: calc(100% - 28px);
+
+    padding-top: 92px;
+  }
+
+  .property-breadcrumb {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,540 @@
+/* =========================================
+   HERO
+========================================= */
+
+.hero-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 760px;
+  height: 100vh;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background: #0b0b0b;
+}
+
+/* =========================================
+   BACKGROUND IMAGE
+========================================= */
+
+.hero-background {
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    url("/images/gulberg-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.02);
+
+  z-index: 0;
+}
+
+/* =========================================
+   DARK OVERLAY
+========================================= */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(11, 11, 11, 0.88) 0%,
+      rgba(11, 11, 11, 0.65) 42%,
+      rgba(11, 11, 11, 0.38) 100%
+    );
+
+  z-index: 1;
+}
+
+.hero-overlay::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      0deg,
+      rgba(11, 11, 11, 0.75) 0%,
+      transparent 35%
+    );
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.hero-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(
+    1240px,
+    calc(100% - 48px)
+  );
+
+  margin: 0 auto;
+
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.hero-content {
+  max-width: 720px;
+
+  margin-bottom: 45px;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 18px;
+
+  color: #c9a227;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.hero-eyebrow::before {
+  content: "";
+
+  width: 28px;
+  height: 1px;
+
+  background: #c9a227;
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(
+    48px,
+    6vw,
+    78px
+  );
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+  display: block;
+
+  color: #c9a227;
+}
+
+.hero-description {
+  max-width: 540px;
+
+  margin: 25px 0 0;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.72
+  );
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.hero-search {
+  width: 100%;
+
+  min-height: 94px;
+
+  padding: 12px;
+
+  display: flex;
+  align-items: stretch;
+
+  gap: 0;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.15);
+
+  border-radius: 7px;
+
+  background:
+    rgba(11, 11, 11, 0.92);
+
+  box-shadow:
+    0 20px 50px
+    rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(10px);
+}
+
+/* =========================================
+   SEARCH FIELDS
+========================================= */
+
+.search-field {
+  min-width: 145px;
+
+  flex: 1;
+
+  padding: 12px 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 7px;
+}
+
+.search-field label,
+.search-price label {
+  color: #c9a227;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+}
+
+.search-field select {
+  width: 100%;
+
+  padding: 0;
+
+  border: 0;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.search-field select option {
+  background: #0b0b0b;
+
+  color: #ffffff;
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.search-divider {
+  width: 1px;
+
+  margin: 14px 0;
+
+  background:
+    rgba(255, 255, 255, 0.12);
+}
+
+/* =========================================
+   PRICE
+========================================= */
+
+.search-price {
+  min-width: 180px;
+
+  padding: 12px 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 7px;
+}
+
+.price-inputs {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.price-inputs input {
+  width: 75px;
+
+  padding: 0;
+
+  border: 0;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 12px;
+}
+
+.price-inputs input::placeholder {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.45
+  );
+}
+
+.price-inputs span {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.35
+  );
+}
+
+/* Remove number arrows */
+
+.price-inputs input::-webkit-outer-spin-button,
+.price-inputs input::-webkit-inner-spin-button {
+  margin: 0;
+
+  -webkit-appearance: none;
+}
+
+.price-inputs input[type="number"] {
+  appearance: textfield;
+}
+
+/* =========================================
+   SEARCH BUTTON
+========================================= */
+
+.hero-search-button {
+  min-width: 125px;
+
+  margin-left: 10px;
+
+  border: 1px solid #c9a227;
+
+  border-radius: 5px;
+
+  background: #c9a227;
+
+  color: #0b0b0b;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-search-button:hover {
+  background: #f7f3e8;
+
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   SCROLL
+========================================= */
+
+.hero-scroll {
+  position: absolute;
+
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  );
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease;
+}
+
+.hero-scroll:hover {
+  color: #c9a227;
+}
+
+.scroll-arrow {
+  color: #c9a227;
+
+  font-size: 16px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .hero-search {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 0;
+
+    padding: 10px;
+  }
+
+  .search-divider {
+    display: none;
+  }
+
+  .search-field,
+  .search-price {
+    border-bottom: 1px solid
+      rgba(255, 255, 255, 0.1);
+  }
+
+  .hero-search-button {
+    min-height: 52px;
+
+    margin: 10px 0 0;
+
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .hero-section {
+    min-height: 780px;
+  }
+
+  .hero-container {
+    width: calc(100% - 32px);
+
+    padding-top: 80px;
+  }
+
+  .hero-content {
+    margin-bottom: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+
+    line-height: 1.7;
+  }
+
+  .hero-search {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 8px;
+  }
+
+  .search-field,
+  .search-price {
+    min-height: 65px;
+
+    padding: 10px 14px;
+
+    border-bottom: 1px solid
+      rgba(255, 255, 255, 0.1);
+  }
+
+  .search-divider {
+    display: none;
+  }
+
+  .price-inputs input {
+    width: 90px;
+  }
+
+  .hero-search-button {
+    height: 50px;
+
+    margin: 8px 0 0;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+}
