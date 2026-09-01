@@ -15,10 +15,10 @@ import ViewProperty from "../pages/admin/properties2/ViewProperty2";
 
 import PropertyDetails from "../pages/admin/properties2/PropertyDetails2";
 
-import Enquiries from "../pages/admin/enquiries/enquiries2";
-import Categories from "../pages/admin/categories/categories2";
-import Locations from "../pages/admin/locations/Locations2";
-import EnquiryView from "../pages/admin/enquiries/EnquiryView2";
+import Enquiries from "../pages/admin/enquiries2/enquiries2";
+import Categories from "../pages/admin/categories2/categories2";
+import Locations from "../pages/admin/locations2/Locations2";
+import EnquiryView from "../pages/admin/enquiries2/EnquiryView2";
 import Home from "../pages/public/Home";
 import Propertiespage from "../pages/public/Properties";
 import PropertyDetailsPage from "../pages/public/PropertyDetails";
