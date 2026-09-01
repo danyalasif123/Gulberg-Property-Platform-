@@ -1,4 +1,4 @@
-import PropertyRow from "./PropertyRow";
+import PropertyRow from "./PropertyRow2";
 
 const PropertyTable = ({
   properties,

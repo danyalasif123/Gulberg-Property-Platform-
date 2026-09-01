@@ -4,9 +4,9 @@ import AdminSidebar from "../../../components/admin/AdminSidebar";
 import AdminNavbar from "../../../components/admin/AdminNavbar";
 
 import PropertyHeader from "../../../components/admin/Properties/PropertyHeader2";
-import PropertyToolbar from "../../../components/admin/properties/PropertyToolbar";
-import PropertyTable from "../../../components/admin/properties/PropertyTable";
-import PropertyPagination from "../../../components/admin/properties/PropertyPagination";
+import PropertyToolbar from "../../../components/admin/Properties/PropertyToolbar2";
+import PropertyTable from "../../../components/admin/Properties/PropertyTable2";
+import PropertyPagination from "../../../components/admin/Properties/PropertyPagination2";
 
 import api from "../../../services/api";
 
