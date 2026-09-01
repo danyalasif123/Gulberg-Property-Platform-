@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import AdminNavbar from "../../../components/admin/AdminNavbar";
-import LocationForm from "./LocationForm";
+import LocationForm from "./LocationForm2";
 
 import api from "../../../services/api";
 
-import "./Locations.css";
+import "./Locations2.css";
 
 const Locations = () => {
   const [locations, setLocations] = useState([]);

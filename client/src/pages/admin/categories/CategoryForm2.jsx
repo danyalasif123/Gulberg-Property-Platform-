@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import api from "../../../services/api";
 
-import "./CategoryForm.css";
+import "./CategoryForm2.css";
 
 const CategoryForm = ({
   category,

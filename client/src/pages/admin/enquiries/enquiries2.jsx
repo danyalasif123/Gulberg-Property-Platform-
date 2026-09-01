@@ -6,7 +6,7 @@ import AdminNavbar from "../../../components/admin/AdminNavbar";
 
 import api from "../../../services/api";
 
-import "./Enquiries.css";
+import "./Enquiries2.css";
 
 const Enquiries = () => {
   const navigate = useNavigate();

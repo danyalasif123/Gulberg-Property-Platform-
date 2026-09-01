@@ -6,7 +6,7 @@ import AdminNavbar from "../../../components/admin/AdminNavbar";
 
 import api from "../../../services/api";
 
-import "./AddProperty.css";
+import "./AddProperty2.css";
 
 const initialForm = {
   title: "",

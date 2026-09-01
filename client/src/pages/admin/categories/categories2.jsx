@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import AdminNavbar from "../../../components/admin/AdminNavbar";
-import CategoryForm from "./CategoryForm";
+import CategoryForm from "./CategoryForm2";
 
 import api from "../../../services/api";
 
-import "./Categories.css";
+import "./Categories2.css";
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);

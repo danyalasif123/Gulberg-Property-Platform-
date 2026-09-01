@@ -9,13 +9,13 @@ import AdminLogin from "../pages/auth/AdminLogin";
 import Dashboard from "../pages/admin/Dashboard";
 
 import Properties from "../pages/admin/properties/Properties2";
-import AddProperty from "../pages/admin/properties/AddProperty";
-import EditProperty from "../pages/admin/properties/EditProperty";
-import ViewProperty from "../pages/admin/properties/ViewProperty";
+import AddProperty from "../pages/admin/properties/AddProperty2";
+import EditProperty from "../pages/admin/properties/EditProperty2";
+import ViewProperty from "../pages/admin/properties/ViewProperty2";
 
-import PropertyDetails from "../pages/admin/properties/PropertyDetails";
+import PropertyDetails from "../pages/admin/properties/PropertyDetails2";
 
-import Enquiries from "../pages/admin/enquiries/enquiries";
+import Enquiries from "../pages/admin/enquiries/enquiries2";
 import Categories from "../pages/admin/categories/categories2";
 import Locations from "../pages/admin/locations/Locations2";
 import EnquiryView from "../pages/admin/enquiries/EnquiryView2";

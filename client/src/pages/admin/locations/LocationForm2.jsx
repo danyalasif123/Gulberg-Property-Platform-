@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import api from "../../../services/api";
 
-import "./LocationForm.css";
+import "./LocationForm2.css";
 
 const LocationForm = ({
   location,
