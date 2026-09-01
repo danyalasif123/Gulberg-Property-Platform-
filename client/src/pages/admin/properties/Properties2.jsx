@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import AdminNavbar from "../../../components/admin/AdminNavbar";
 
-import PropertyHeader from "../../../components/admin/properties/PropertyHeader";
+import PropertyHeader from "../../../components/admin/Properties/PropertyHeader2";
 import PropertyToolbar from "../../../components/admin/properties/PropertyToolbar";
 import PropertyTable from "../../../components/admin/properties/PropertyTable";
 import PropertyPagination from "../../../components/admin/properties/PropertyPagination";
