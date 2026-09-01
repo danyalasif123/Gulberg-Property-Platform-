@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import AdminNavbar from "../../../components/admin/AdminNavbar";
 
-import PropertyHeader from "../../../components/admin/Properties/PropertyHeader2";
-import PropertyToolbar from "../../../components/admin/Properties/PropertyToolbar2";
-import PropertyTable from "../../../components/admin/Properties/PropertyTable2";
-import PropertyPagination from "../../../components/admin/Properties/PropertyPagination2";
+import PropertyHeader from "../../../components/admin/adminProperties/PropertyHeader2";
+import PropertyToolbar from "../../../components/admin/adminProperties/PropertyToolbar2";
+import PropertyTable from "../../../components/admin/adminProperties/PropertyTable2";
+import PropertyPagination from "../../../components/admin/adminProperties/PropertyPagination2";
 
 import api from "../../../services/api";
 
 import "./Properties2.css";
-import "../../../components/admin/properties/k.css"
+import "../../../components/admin/adminProperties/k.css"
 const Properties = () => {
   const [properties, setProperties] = useState([]);
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import AdminNavbar from "../../../components/admin/AdminNavbar";
-import CategoryForm from "./CategoryForm2";
+import CategoryForm from "./adminCategoryForm";
 
 import api from "../../../services/api";
 

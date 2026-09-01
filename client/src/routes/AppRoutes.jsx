@@ -8,17 +8,17 @@ import AdminLogin from "../pages/auth/AdminLogin";
 
 import Dashboard from "../pages/admin/Dashboard";
 
-import Properties from "../pages/admin/properties2/Properties2";
-import AddProperty from "../pages/admin/properties2/AddProperty2";
-import EditProperty from "../pages/admin/properties2/EditProperty2";
-import ViewProperty from "../pages/admin/properties2/ViewProperty2";
+import Properties from "../pages/admin/adminproperties/adminProperties";
+import AddProperty from "../pages/admin/adminproperties/adminAddProperty";
+import EditProperty from "../pages/admin/adminproperties/adminEditProperty";
+import ViewProperty from "../pages/admin/adminproperties/adminViewProperty";
 
-import PropertyDetails from "../pages/admin/properties2/PropertyDetails2";
+import PropertyDetails from "../pages/admin/adminproperties/adminPropertyDetails";
 
-import Enquiries from "../pages/admin/enquiries2/enquiries2";
-import Categories from "../pages/admin/categories2/categories2";
-import Locations from "../pages/admin/locations2/Locations2";
-import EnquiryView from "../pages/admin/enquiries2/EnquiryView2";
+import Enquiries from "../pages/admin/adminenquiries/adminenquiries";
+import Categories from "../pages/admin/admincategories/admincategories";
+import Locations from "../pages/admin/adminlocations/adminLocations";
+import EnquiryView from "../pages/admin/adminenquiries/adminEnquiryView";
 import Home from "../pages/public/Home";
 import Propertiespage from "../pages/public/Properties";
 import PropertyDetailsPage from "../pages/public/PropertyDetails";

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import AdminNavbar from "../../../components/admin/AdminNavbar";
-import LocationForm from "./LocationForm2";
+import LocationForm from "./adminLocationForm";
 
 import api from "../../../services/api";
 
