@@ -6,7 +6,7 @@ import AdminNavbar from "../../../components/admin/AdminNavbar";
 
 import api from "../../../services/api";
 
-import "./AddProperty.css";
+import "./adminAddProperty.css";
 
 const MAX_IMAGES = 10;
 const MAX_FILE_SIZE = 5 * 1024 * 1024;

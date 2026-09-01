@@ -6,7 +6,7 @@ import AdminNavbar from "../../../components/admin/AdminNavbar";
 
 import api from "../../../services/api";
 
-import "./PropertyDetails2.css";
+import "./adminPropertyDetails.css";
 
 const PropertyDetails = () => {
   const { id } = useParams();

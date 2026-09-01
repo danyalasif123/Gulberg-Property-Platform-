@@ -6,7 +6,7 @@ import CategoryForm from "./adminCategoryForm";
 
 import api from "../../../services/api";
 
-import "./Categories2.css";
+import "./admincategories.css";
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);

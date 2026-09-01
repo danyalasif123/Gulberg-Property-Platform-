@@ -6,7 +6,7 @@ import LocationForm from "./adminLocationForm";
 
 import api from "../../../services/api";
 
-import "./Locations2.css";
+import "./adminLocations.css";
 
 const Locations = () => {
   const [locations, setLocations] = useState([]);

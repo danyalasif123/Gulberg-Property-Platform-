@@ -6,7 +6,7 @@ import AdminNavbar from "../../../components/admin/AdminNavbar";
 
 import api from "../../../services/api";
 
-import "./ViewProperty2.css";
+import "./adminViewProperty.css";
 
 const ViewProperty = () => {
   const { id } = useParams();

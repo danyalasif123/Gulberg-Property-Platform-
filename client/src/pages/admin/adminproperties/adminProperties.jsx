@@ -10,7 +10,7 @@ import PropertyPagination from "../../../components/admin/adminProperties/Proper
 
 import api from "../../../services/api";
 
-import "./Properties2.css";
+import "./adminProperties.css";
 import "../../../components/admin/adminProperties/k.css"
 const Properties = () => {
   const [properties, setProperties] = useState([]);
