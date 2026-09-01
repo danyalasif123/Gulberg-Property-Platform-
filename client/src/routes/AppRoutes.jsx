@@ -18,7 +18,7 @@ import PropertyDetails from "../pages/admin/properties/PropertyDetails";
 import Enquiries from "../pages/admin/enquiries/enquiries";
 import Categories from "../pages/admin/categories/categories2";
 import Locations from "../pages/admin/locations/Locations2";
-import EnquiryView from "../pages/admin/Enquiries/EnquiryView";
+import EnquiryView from "../pages/admin/enquiries/EnquiryView2";
 import Home from "../pages/public/Home";
 import Propertiespage from "../pages/public/Properties";
 import PropertyDetailsPage from "../pages/public/PropertyDetails";
