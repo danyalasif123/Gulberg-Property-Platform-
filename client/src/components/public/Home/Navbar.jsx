@@ -90,7 +90,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            to="/admin/login"
+            to="/contact"
             className="nav-link"
           >
             Contact
